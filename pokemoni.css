@@ -1,0 +1,137 @@
+/* Resetování základních stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tělo stránky */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Kontejner pro centrální obsah */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hlavička */
+header {
+    background-color: #ffcb05;
+    color: #3d3d3d;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #3d3d3d;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3rem;
+}
+
+/* Hlavní obsah */
+main {
+    padding: 40px 0;
+}
+
+/* Sekce o seriálu */
+.overview {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.overview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcb05;
+}
+
+.overview p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Karty s detaily */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: white;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcb05;
+}
+
+.card ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.card ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Galerie */
+.gallery {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcb05;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-grid img {
+    margin: 10px;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* Patička */
+footer {
+    background-color: #3d3d3d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
